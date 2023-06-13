@@ -1,8 +1,8 @@
 import React from "react";
 import ToyCard from "./ToyCard";
 
-function ToyContainer({ toys }) {
-  const toyMap = toys.map((toy) => <ToyCard key={toy.id} toy={toy} />);
+function ToyContainer({ toys, onDeleteClick }) {
+  const toyMap = toys.map((toy) => <ToyCard key={toy.id} toy={toy} onDeleteClick={onDeleteClick} />);
 
   return (
     <>
